@@ -1,6 +1,5 @@
 /**
 * git example
-* sydney perron
 * 
 * sample code for version control
 * draw me a nice pyramid
@@ -13,21 +12,21 @@
  */
 function setup() {
     // 640x480 canvas
-    createCanvas(640, 640);
+    createCanvas(640, 520);
     // Don't show cursor vvv
     noCursor();
 }
 
 function draw(){
     background(0, 0, 0);
-    const levels = 10;
+    const levels = 15;
     for (let level = levels; level > 0; level--){
         push();
         const shade = map(level, 1, levels, 10, 255);
         noStroke();
         fill(shade, shade, 0);
         rectMode(CENTER);
-        rect(320, 320, level * 48, level * 48);
+        rect(320, 520, level * 67, level * 67);
         pop();
     }
     push();

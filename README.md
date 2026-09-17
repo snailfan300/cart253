@@ -1,4 +1,4 @@
-# my computers houses (computer house) vvv
+# my computers houses (computer house)
 it is cart253
 <img style="position: absolute; top: 560px" src="https://havenfolio.neocities.org/IMG_4243.gif">
 <p><i> otherwise, i put my class stuff here, which i am okay at doing sometimes</i> </p>

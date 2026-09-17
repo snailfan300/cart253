@@ -6,7 +6,8 @@ it is cart253
 <hr>
 
 # some other stuff
-<p> <a href="https://github.com/snailfan300/cart253/blob/main/journal.md">text journals</a> </p>
+<p> <a href="https://snailfan300.github.io/cart253/journal.md">text journals</a> </p>
+
 
 # prototypes
 <p>*will appear below when this subsection becomes relevant :o)</p>

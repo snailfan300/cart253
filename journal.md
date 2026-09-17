@@ -1,5 +1,8 @@
 # assignment-based text journals
 
+<p> <a href=
+</p>
+
 <hr>
 
 ## sept 17

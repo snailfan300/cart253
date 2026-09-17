@@ -1,6 +1,6 @@
 # assignment-based text journals
 
-<p> <a href="https://github.com/snailfan300/cart253/blob/main/README.md">back to main readme</a>
+<p> <a href="https://snailfan300.github.io/cart253">back to main readme</a>
 </p>
 
 <hr>

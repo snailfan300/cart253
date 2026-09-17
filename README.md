@@ -7,4 +7,6 @@ it is cart253
 
 # some other stuff
 <p>[journal](link)</p>
-<p>[prototypies](link)</p>
+
+# prototypes
+<p>*will appear below when this subsection becomes relevant :o)</p>

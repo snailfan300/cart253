@@ -11,7 +11,6 @@ Three sample projects coded in Javascript, mostly built to be visual.
 ## Attribution
 
 > - This project uses [the p5.js framework](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
 
 ## License
 

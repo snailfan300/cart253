@@ -2,7 +2,7 @@
 it is cart253
 <img src="https://havenfolio.neocities.org/IMG_4243.gif">
 <p><i> otherwise, i put my class stuff here, which i am okay at doing sometimes</i> </p>
-<p><i>you can catch some of my other work on https://havenfolio.neocities.org/</i> </p>
+<p><i>you can catch some of my other work on my <a href="https://havenfolio.neocities.org>portfolio</a> </i> </p>
 <hr>
 
 # some other stuff

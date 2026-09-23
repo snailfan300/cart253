@@ -1,5 +1,3 @@
-<title>computer cart house</title>
-
 # my computers houses (computer house)
 it is cart253
 <img src="https://havenfolio.neocities.org/IMG_4243.gif">

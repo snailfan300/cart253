@@ -21,6 +21,14 @@ let mrFurious = {
   }
 };
 
+  let backgroundcolor = {
+  fill: {
+    r: 160,
+    g: 180,
+    b: 200,
+  }
+};
+
 /**
  * Create the canvas
  */
@@ -32,10 +40,16 @@ function setup() {
  * Draw (and update) Mr. Furious
  */
 function draw() {
-  background(160, 180, 200);
+  background(backgroundcolor.fill.r, backgroundcolor.fill.g, backgroundcolor.fill.b);
+
   //decreases g and b values to make him more red
   mrFurious.fill.g = mrFurious.fill.g - 1;
   mrFurious.fill.b = mrFurious.fill.b - 1;
+
+  //turn background color to nighttime
+  backgroundcolor.fill.r = backgroundcolor.fill.r - 0.5;
+  backgroundcolor.fill.g = backgroundcolor.fill.g - 0.5;
+  backgroundcolor.fill.b = backgroundcolor.fill.b - 0.5;
 
   // Draw Mr. Furious as a coloured circle
   push();

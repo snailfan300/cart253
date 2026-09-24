@@ -33,7 +33,7 @@ let mrFurious = {
 
   let evilragex
   let evilragey
-  let randomincreasing
+
 
 /**
  * Create the canvas
@@ -71,8 +71,14 @@ function draw() {
 
   //rage constraint
 
-  evilragex = random (190, 210);
-  evilragey = random (190, 210);
+  let minx = random (190, 210);
+  let miny = random (190, 210);
+
+  minx = minx + 4;
+  miny = miny + 4;
+
+  evilragex = minx + 4;
+  evilragey = miny + 4;
 
   mrFurious.x = evilragex;
   mrFurious.y = evilragey;

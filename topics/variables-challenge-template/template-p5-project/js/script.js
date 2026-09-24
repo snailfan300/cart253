@@ -29,6 +29,8 @@ let mrFurious = {
   }
 };
 
+  let birdx = 0;
+
 /**
  * Create the canvas
  */
@@ -50,6 +52,19 @@ function draw() {
   backgroundcolor.fill.r = backgroundcolor.fill.r - 0.5;
   backgroundcolor.fill.g = backgroundcolor.fill.g - 0.5;
   backgroundcolor.fill.b = backgroundcolor.fill.b - 0.5;
+
+  //moving bird
+  birdx = birdx + 5;
+
+  if (birdx > width + 10){
+    birdx = -10;
+  }
+
+  push();
+  noStroke();
+  circle(birdx, (height/2 - 90), 20);
+  pop();
+
 
   // Draw Mr. Furious as a coloured circle
   push();

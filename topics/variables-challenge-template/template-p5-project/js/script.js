@@ -31,6 +31,10 @@ let mrFurious = {
 
   let birdx = 0;
 
+  let evilragex
+  let evilragey
+  let randomincreasing
+
 /**
  * Create the canvas
  */
@@ -64,6 +68,14 @@ function draw() {
   noStroke();
   circle(birdx, (height/2 - 90), 20);
   pop();
+
+  //rage constraint
+
+  evilragex = random (190, 210);
+  evilragey = random (190, 210);
+
+  mrFurious.x = evilragex;
+  mrFurious.y = evilragey;
 
 
   // Draw Mr. Furious as a coloured circle

@@ -31,8 +31,10 @@ let mrFurious = {
 
   let birdx = 0;
 
-  let evilragex
-  let evilragey
+  let evilragex = 200
+  let evilragey = 200
+  let xinc = 200
+  let yinc = 201
 
 
 /**
@@ -71,14 +73,10 @@ function draw() {
 
   //rage constraint
 
-  let minx = random (190, 210);
-  let miny = random (190, 210);
-
-  minx = minx + 4;
-  miny = miny + 4;
-
-  evilragex = minx + 4;
-  evilragey = miny + 4;
+  evilragex = random(xinc, yinc);
+  xinc += 0.1;
+  yinc -= 0.1;
+  evilragey = random(xinc, yinc);
 
   mrFurious.x = evilragex;
   mrFurious.y = evilragey;

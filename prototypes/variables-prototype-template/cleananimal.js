@@ -25,3 +25,22 @@ function draw() {
 
   fill(203, 48, 48);
   ellipse(width/2, height/2 + 400, 450, 600);
+
+  //details
+  fill(140, 0, 65);
+  ellipse(width/2 - 220, height/2 -170, 100, 200);
+  ellipse(width/2 + 220, height/2 -170, 100, 200);
+
+  ellipse(width/2 - 70, height/2 - 5, 60, 50);
+  ellipse(width/2 + 70, height/2 - 5, 60, 50);
+
+  ellipse(width/2, height/2 + 500, 400, 300);
+
+  //eyes and nose
+  fill(0);
+  ellipse(width/2 -100, height/2 + 40, 70, 30);
+  ellipse(width/2 + 100, height/2 + 40, 70, 30);
+
+  ellipse(width/2, height/2 + 100, 80, 50);
+
+  pop();

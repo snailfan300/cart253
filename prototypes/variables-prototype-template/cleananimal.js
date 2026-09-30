@@ -2,14 +2,16 @@ function setup() {
   createCanvas(900, 900);
   ellipseMode(CENTER);
   rectMode(CENTER);
+  colorMode(HSB);
 }
 
 function draw() {
-  background(220);
+  let backgroundHue = map(mouseY, 0, height, 0, 360);
+  background(backgroundHue, 15, 90);
 
   push();
   noStroke();
-  fill(203, 48, 48);
+  fill(0, 76, 80);
   ellipse(width/2, height/2 + 70, 600, 500);
 
   //ears
@@ -23,11 +25,10 @@ function draw() {
   ellipse(width/2 + 270, height/2 + 120, 180, 130);
   ellipse(width/2 + 230, height/2 + 210, 180, 130);
 
-  fill(203, 48, 48);
   ellipse(width/2, height/2 + 400, 450, 600);
 
   //details
-  fill(140, 0, 65);
+  fill(332, 100, 55);
   ellipse(width/2 - 220, height/2 -170, 100, 200);
   ellipse(width/2 + 220, height/2 -170, 100, 200);
 
@@ -44,7 +45,6 @@ function draw() {
   ellipse(width/2, height/2 + 100, 80, 50);
 
   pop();
-
 
   let sponge = mouseX -10;
 

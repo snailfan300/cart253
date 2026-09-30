@@ -44,3 +44,28 @@ function draw() {
   ellipse(width/2, height/2 + 100, 80, 50);
 
   pop();
+
+
+  let sponge = mouseX -10;
+
+  push();
+  translate (sponge, height/2 - 130);
+  noStroke();
+  fill(334, 20, 98);
+  circle(40, 100, 60);
+  circle(70, 70, 80);
+  circle(20, 60, 120);
+  circle(-40, 110, 60);
+
+  //sponge
+  fill(44, 87, 100);
+  rect(0, 0, 150, 210, 20);
+
+  //details
+  fill(33, 93, 79)
+  circle(30, -40, 40);
+  circle(-5, -60, 20);
+
+  pop();
+
+}

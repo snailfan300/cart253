@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * "Moving Orange"
+ * Joel P.
  *
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An orange that appears on the canvas. Every time the canvas is clicked or refreshed, the orange will change position.
  */
 
 "use strict";
@@ -15,6 +14,7 @@ function setup() {
   createCanvas(900, 900);
   randX = random (100, 800);
   randY = random (100, 800);
+  ellipseMode(CENTER);
 }
 
 function draw() {
@@ -24,10 +24,19 @@ function draw() {
   translate (randX, randY);
   noStroke();
   fill(139, 245, 39);
-  circle(125, 0, 20);
+  circle(0, 0, 500);
   push();
   fill(255);
-  circle (-22.5, 0, 10)
+  circle (-22.5, -200, 200);
+  push();
+  noFill();
+  stroke(97, 50, 63);
+  strokeWeight(40);
+  arc(90, -255, 190, 300, PI, PI + QUARTER_PI);
   pop();
   pop();
+
+  if (mouseIsPressed == true){
+    setup();
+    }
 }

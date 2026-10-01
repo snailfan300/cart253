@@ -44,6 +44,22 @@ it is cart253
 <h3>Prototype A: "Moving Orange"</h3>
 <p>A graphical orange that will change its position every time setup is triggered. Setup can intentionally be triggered again if the canvas is clicked on at any point. This can be done any number of times. The orange's position is tied to a set of x and y variables that each have a constrained random value, which will be rerolled every time setup is ran.</p>
 
+<img src="Images/i_movingorange_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/index.html">here</a>
+<p> <small> *Slight flash warning for re-initialization of project </small> </p>
+
+<h3>Prototype B: "Clean Animal"</h3>
+<p>A sponge object follows your cursor, and is locked to x values only. Moving the cursor will move the sponge's x position to make it appear as if you are scrubbing this dirty beast. The hue of the background also changes based on the cursor's y position.</p>
+
 <img>
 
-> Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/index.html">here</a>
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/cleananimal.html">here</a>
+
+<h3>Prototype C: "Button World"</h3>
+<p>Button world, with a lot of buttons. Canvas contains a large amount of repeated circular objects (created using a for-loop) that change color when the cursor is hovered over them.</p>
+
+
+<img>
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/buttonworld.html">here</a>

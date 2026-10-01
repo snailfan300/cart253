@@ -47,6 +47,7 @@ it is cart253
 <img src="Images/i_movingorange_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/index.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/variables-prototype-template/js/teleportingorange.js">here</a>
 <p> <small> *Slight flash warning for re-initialization of project </small> </p>
 
 <h3>Prototype B: "Clean Animal"</h3>
@@ -55,6 +56,7 @@ it is cart253
 <img src="Images/i_cleananimal_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/cleananimal.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/variables-prototype-template/js/cleananimal.js">here</a>
 
 <h3>Prototype C: "Button World"</h3>
 <p>Button world, with a lot of buttons. Canvas contains a large amount of repeated circular objects (created using a for-loop) that change color when the cursor is hovered over them.</p>
@@ -63,3 +65,4 @@ it is cart253
 <img src="Images/i_buttonworld_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/buttonworld.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/variables-prototype-template/js/buttonworld.js">here</a>

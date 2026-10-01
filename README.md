@@ -20,6 +20,7 @@ it is cart253
 <img src="Images/i_pleasantsun_ss.png">
 
 >- Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/template-p5-project/index.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/instructions-prototype-template/js/pleasantsun.js">here</a>
 
 <h3>Prototype B: "Repeated Square"</h3>
 <p>Visual project using a for loop to repeat instances of a rotating square in the center. I almost repeated the code by copy/pasting the lines manually, until I remembered that P5 has a "for" function that's infinitely more optimized than what I was about to do.</p>

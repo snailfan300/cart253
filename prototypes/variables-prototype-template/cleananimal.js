@@ -1,14 +1,22 @@
+/**
+ * "Clean Animal"
+ * Joel P.
+ *
+ * You can move your cursor over a graphical animal to clean it with a sponge, featuring background shenanigans because my original idea wasn't coming out the way I wanted (bubble elements would only appear within a certain range)
+ */
+
 function setup() {
   createCanvas(900, 900);
   ellipseMode(CENTER);
   rectMode(CENTER);
-  colorMode(HSB);
+  colorMode(HSB); // < so i can modify the hue of the background instead of having to manually set rgb limits
 }
 
 function draw() {
   let backgroundHue = map(mouseY, 0, height, 0, 360);
-  background(backgroundHue, 15, 90);
+  background(backgroundHue, 15, 90); // background hue will change depending on your cursor's y position
 
+  // everything below are shape functions for drawing a simple animal vvv
   push();
   noStroke();
   fill(0, 76, 80);
@@ -45,7 +53,9 @@ function draw() {
   ellipse(width/2, height/2 + 100, 80, 50);
 
   pop();
+  // ***
 
+  // below are functions for drawing a sponge object for the cursor, follows the cursor at a slight offset
   let sponge = mouseX -10;
 
   push();

@@ -46,4 +46,4 @@ it is cart253
 
 <img>
 
-> Running project can be found <a href="https://snailfan300.github.io/prototypes/variables-prototype-template/index.html">here</a>
+> Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/index.html">here</a>

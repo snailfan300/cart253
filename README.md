@@ -52,7 +52,7 @@ it is cart253
 <h3>Prototype B: "Clean Animal"</h3>
 <p>A sponge object follows your cursor, and is locked to x values only. Moving the cursor will move the sponge's x position to make it appear as if you are scrubbing this dirty beast. The hue of the background also changes based on the cursor's y position.</p>
 
-<img>
+<img src="Images/i_cleananimal_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/cleananimal.html">here</a>
 
@@ -60,6 +60,6 @@ it is cart253
 <p>Button world, with a lot of buttons. Canvas contains a large amount of repeated circular objects (created using a for-loop) that change color when the cursor is hovered over them.</p>
 
 
-<img>
+<img src="Images/i_buttonworld_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/buttonworld.html">here</a>

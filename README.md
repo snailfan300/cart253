@@ -34,3 +34,4 @@ it is cart253
 <img src="Images/i_pentportrait_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/template-p5-project/pentportrait.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/instructions-prototype-template/js/pentportrait.js">here</a>

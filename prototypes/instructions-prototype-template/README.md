@@ -2,7 +2,7 @@
 
 Joel P.
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+<a href="https://snailfan300.github.io/cart253/">View this project online</a>
 
 ## Description
 

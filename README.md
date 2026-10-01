@@ -28,6 +28,7 @@ it is cart253
 <img src="Images/i_repeatedsquare_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/template-p5-project/repeatedsquare.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/instructions-prototype-template/js/repeatedsquare.js">here</a>
 
 <h3>Prototype C: "Pent Portrait"</h3>
 <p>Something weird I felt like doing for the love of the game. Mostly relying on P5's "translate" function because I am very bad at js coordinates when it comes to 2D shapes. Symmetrical portrait of Pent from Supermental.</p>

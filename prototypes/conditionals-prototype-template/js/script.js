@@ -72,6 +72,8 @@ function draw() {
   circle(20, 60, 120);
   circle(-40, 110, 60);
 
+  let spongeX = 150; // width of sponge, I'm only really checking the collision/distance horizontally (or on a restricted axis) since originally the sponge cursor object was locked to the x-axis
+  
   //sponge
   fill(44, 87, 100);
   rect(0, 0, 150, 210, 20);

@@ -21,11 +21,10 @@ function draw() {
   let y1 = height/2 + 70;
   // ^^ x1 and y1 are also for faster referencing, in the case of dist calculations
 
-  // everything below are shape functions for drawing a simple animal vvv
   push();
   noStroke();
   fill(0, 76, 80);
-  ellipse(x1, y1, headSize);
+  ellipse(x1, y1, headSize); // therefore with the variables above this will draw the animal's head in xyz position
 
   //ears
   ellipse(width/2 - 220, height/2 - 200, 150, 300);
@@ -58,25 +57,16 @@ function draw() {
   ellipse(width/2, height/2 + 100, 80, 50);
 
   pop();
-  // ***
 
-  // below are functions for drawing a sponge object for the cursor, follows the cursor at a slight offset
-  //let sponge = mouseX -10;
-
-  push();
-  translate (sponge, height/2 - 130);
-  noStroke();
-  fill(334, 20, 98);
-  circle(40, 100, 60);
-  circle(70, 70, 80);
-  circle(20, 60, 120);
-  circle(-40, 110, 60);
 
   let spongeX = 150; // width of sponge, I'm only really checking the collision/distance horizontally (or on a restricted axis) since originally the sponge cursor object was locked to the x-axis
-
   //sponge
+  push();
+  translate(mouseX, mouseY);
+  noStroke();
   fill(44, 87, 100);
-  rect(0, 0, 150, 210, 20);
+  rect(0, 0, spongeX, 210, 20);
+
 
   //details
   fill(33, 93, 79)
@@ -84,6 +74,8 @@ function draw() {
   circle(-5, -60, 20);
 
   pop();
+    // ^^ all this stuff here draws a sponge object that follows the cursor, movements restricted to the x-axis only
+
   let animalDist = dist(mouseX, mouseY, x1, y1); // calculate distance between cursor (or presumably the center of it) and the origin of the animal's head as defined earlier
 
   let collision = (animalDist < headSize/2 + spongeX/2); // uses the radius of the head plus half of the width of the sponge. the distance has to be smaller than these two values put together for the collision detection to actually work (?)

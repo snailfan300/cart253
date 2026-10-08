@@ -2,25 +2,30 @@
  * "Clean Animal"
  * Joel P.
  *
- * You can move your cursor over a graphical animal to clean it with a sponge, featuring background shenanigans because my original idea wasn't coming out the way I wanted (bubble elements would only appear within a certain range)
+ * I found a way to fix my weird problem from the previous iteration. It actually completely flew over my head because the solution was really just an if statement (as I thought) but I kept messing up the syntax really badly so I had to scrap the idea
+ * Some collision-validating code referenced from Pippin Barr's own variants (hi)
  */
 
-function setup() {
+function setup() { // canvas always 900x900, and centered shape modes because i find it easier to calculate
   createCanvas(900, 900);
   ellipseMode(CENTER);
   rectMode(CENTER);
-  colorMode(HSB); // < so i can modify the hue of the background instead of having to manually set rgb limits
+  colorMode(HSB); // < remains in hsb like the previous iteration because i don't feel like manually switching it back to rgb; i already have the color codes i want in here as is
 }
 
 function draw() {
-  let backgroundHue = map(mouseY, 0, height, 0, 360);
-  background(backgroundHue, 15, 90); // background hue will change depending on your cursor's y position
+  background(174, 20, 96);
+
+  let headSize = 550; // the size of the animal's head is a defined variable so i can reference it faster in my if-statement
+  let x1 = width/2;
+  let y1 = height/2 + 70;
+  // ^^ x1 and y1 are also for faster referencing, in the case of dist calculations
 
   // everything below are shape functions for drawing a simple animal vvv
   push();
   noStroke();
   fill(0, 76, 80);
-  ellipse(width/2, height/2 + 70, 600, 500);
+  ellipse(x1, y1, headSize);
 
   //ears
   ellipse(width/2 - 220, height/2 - 200, 150, 300);
@@ -56,7 +61,7 @@ function draw() {
   // ***
 
   // below are functions for drawing a sponge object for the cursor, follows the cursor at a slight offset
-  let sponge = mouseX -10;
+  //let sponge = mouseX -10;
 
   push();
   translate (sponge, height/2 - 130);

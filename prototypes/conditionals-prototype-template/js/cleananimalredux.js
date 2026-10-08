@@ -1,5 +1,5 @@
 /**
- * "Clean Animal"
+ * "Clean Animal Redux"
  * Joel P.
  *
  * I found a way to fix my weird problem from the previous iteration. It actually completely flew over my head because the solution was really just an if statement (as I thought) but I kept messing up the syntax really badly so I had to scrap the idea
@@ -60,6 +60,7 @@ function draw() {
 
 
   let spongeX = 150; // width of sponge, I'm only really checking the collision/distance horizontally (or on a restricted axis) since originally the sponge cursor object was locked to the x-axis
+
   //sponge
   push();
   translate(mouseX, mouseY);

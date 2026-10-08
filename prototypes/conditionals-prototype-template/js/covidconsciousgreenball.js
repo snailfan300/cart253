@@ -49,3 +49,43 @@ function draw() {
   let collision = (cursorDist < invisibleCircle.size/2 + cursorCircle.size/2);
 
 }
+
+//functions for the different facial configs vvv
+
+function smileFace() {
+  //smile mouth
+  push();
+  noFill();
+  stroke("#1C0F03");
+  strokeWeight(15);
+  arc(width/2, height/2 + 25, 250, 250, PI + PI, PI);
+
+  //eyes
+  push();
+  noStroke();
+  fill("#1C0F03");
+  ellipse(width/2 - 70, height/2 - 30, 30);
+  ellipse(width/2 + 70, height/2 - 30, 30);
+
+  pop();
+  pop();
+}
+
+function frownFace() {
+  //frown mouth
+  push();
+  noFill();
+  stroke("#1C0F03");
+  strokeWeight(15);
+  arc(width/2, height/2 + 125, 250, 250, PI, PI + PI);
+
+  //eyes
+  push();
+  noStroke();
+  fill("#1C0F03");
+  ellipse(width/2 - 70, height/2 - 30, 30);
+  ellipse(width/2 + 70, height/2 - 30, 30);
+
+  pop();
+  pop();
+}

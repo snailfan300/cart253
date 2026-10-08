@@ -58,6 +58,6 @@ const penColor = {
      fill(backgroundColor.hue, backgroundColor.saturation, backgroundColor.brightness);
    }
      noStroke(); //
-     circle(mouseX, mouseY, 70); // the 'fills' above will modify that of this circle, which follows the cursor at all times, even as the background color
+     circle(mouseX, mouseY, 40); // the 'fills' above will modify that of this circle, which follows the cursor at all times, even as the background color
      pop();
  }

@@ -4,6 +4,9 @@
  *
  * My friend said the colors looked scary. You hold down the cursor to draw, and otherwise you erase.
  * Would be more technically complex (ie. more palettes) but I can't quite figure it out and unfortunately I'm a little behind on starting these because I had electricians in my house all week which sort of stopped me from working properly. It's okay though
+ *
+ *
+ *** Reminder to self: switch to hsl mode and add 2 random variables for pen and brush, so you can change their colors with keyIsPressed ***
  */
 
  //

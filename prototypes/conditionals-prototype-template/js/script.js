@@ -1,24 +1,81 @@
 /**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * "Clean Animal"
+ * Joel P.
+ *
+ * You can move your cursor over a graphical animal to clean it with a sponge, featuring background shenanigans because my original idea wasn't coming out the way I wanted (bubble elements would only appear within a certain range)
  */
 
-"use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
-
+  createCanvas(900, 900);
+  ellipseMode(CENTER);
+  rectMode(CENTER);
+  colorMode(HSB); // < so i can modify the hue of the background instead of having to manually set rgb limits
 }
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
+  let backgroundHue = map(mouseY, 0, height, 0, 360);
+  background(backgroundHue, 15, 90); // background hue will change depending on your cursor's y position
+
+  // everything below are shape functions for drawing a simple animal vvv
+  push();
+  noStroke();
+  fill(0, 76, 80);
+  ellipse(width/2, height/2 + 70, 600, 500);
+
+  //ears
+  ellipse(width/2 - 220, height/2 - 200, 150, 300);
+  ellipse(width/2 + 220, height/2 - 200, 150, 300);
+
+  //cheeks
+  ellipse(width/2 - 270, height/2 + 120, 180, 130);
+  ellipse(width/2 - 230, height/2 + 210, 180, 130);
+
+  ellipse(width/2 + 270, height/2 + 120, 180, 130);
+  ellipse(width/2 + 230, height/2 + 210, 180, 130);
+
+  ellipse(width/2, height/2 + 400, 450, 600);
+
+  //details
+  fill(332, 100, 55);
+  ellipse(width/2 - 220, height/2 -170, 100, 200);
+  ellipse(width/2 + 220, height/2 -170, 100, 200);
+
+  ellipse(width/2 - 70, height/2 - 5, 60, 50);
+  ellipse(width/2 + 70, height/2 - 5, 60, 50);
+
+  ellipse(width/2, height/2 + 500, 400, 300);
+
+  //eyes and nose
+  fill(0);
+  ellipse(width/2 -100, height/2 + 40, 70, 30);
+  ellipse(width/2 + 100, height/2 + 40, 70, 30);
+
+  ellipse(width/2, height/2 + 100, 80, 50);
+
+  pop();
+  // ***
+
+  // below are functions for drawing a sponge object for the cursor, follows the cursor at a slight offset
+  let sponge = mouseX -10;
+
+  push();
+  translate (sponge, height/2 - 130);
+  noStroke();
+  fill(334, 20, 98);
+  circle(40, 100, 60);
+  circle(70, 70, 80);
+  circle(20, 60, 120);
+  circle(-40, 110, 60);
+
+  //sponge
+  fill(44, 87, 100);
+  rect(0, 0, 150, 210, 20);
+
+  //details
+  fill(33, 93, 79)
+  circle(30, -40, 40);
+  circle(-5, -60, 20);
+
+  pop();
 
 }

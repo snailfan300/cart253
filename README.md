@@ -73,7 +73,7 @@ it is cart253
 <h3>Prototype A: "Clean Animal Redux"</h3>
 <p>Modified version of the <a href="https://snailfan300.github.io/cart253/prototypes/variables-prototype-template/cleananimal.html">Clean Animal project</a> from last week, including unrestricted cursor movement and bubbles that appear on collision.</p>
 
-<img src="Images/i_movingorange_ss.png">
+<img src="Images/i_cleananimalredux_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/index.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/conditionals-prototype-template/js/cleananimalredux.js">here</a>
@@ -81,15 +81,15 @@ it is cart253
 <h3>Prototype B: "Covid Conscious Green Ball"</h3>
 <p>Social distancing is awesome. Please don't upset this poor fellow smack in the middle of the canvas. Bring your cursor too close and you'll upset him.</p>
 
-<img src="Images/i_movingorange_ss.png">
+<img src="Images/i_covidconsciousgreenball_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/covidconsciousgreenball.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/conditionals-prototype-template/js/covidconsciousgreenball.js">here</a>
 
 <h3>Prototype C: "Scary Canvas"</h3>
-<p>Not nearly as technically complex as the other two, but a simple drawing-machine-esque canvas where holding down left click will "draw," and releasing will "erase."</p>
+<p>Not nearly as technically complex as the other two, but a simple drawing-machine-esque canvas where holding down left click will "draw," and releasing will "erase." Pressing any key will refresh the canvas, which changes the two random hues of the pen and the canvas</p>
 
-<img src="Images/i_movingorange_ss.png">
+<img src="Images/i_scarycanvas2_ss.png">
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/scarycanvas.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/conditionals-prototype-template/js/scarycanvas.js">here</a>

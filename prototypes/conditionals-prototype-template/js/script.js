@@ -73,7 +73,7 @@ function draw() {
   circle(-40, 110, 60);
 
   let spongeX = 150; // width of sponge, I'm only really checking the collision/distance horizontally (or on a restricted axis) since originally the sponge cursor object was locked to the x-axis
-  
+
   //sponge
   fill(44, 87, 100);
   rect(0, 0, 150, 210, 20);
@@ -84,5 +84,22 @@ function draw() {
   circle(-5, -60, 20);
 
   pop();
+  let animalDist = dist(mouseX, mouseY, x1, y1); // calculate distance between cursor (or presumably the center of it) and the origin of the animal's head as defined earlier
 
+  let collision = (animalDist < headSize/2 + spongeX/2); // uses the radius of the head plus half of the width of the sponge. the distance has to be smaller than these two values put together for the collision detection to actually work (?)
+  if (collision){
+    bubble();
+  }
+
+  function bubble() { // will draw cute bubbles over the sponge if the if-statement detects that the sponge is over the animal's head
+  push();
+  translate (mouseX, mouseY);
+  noStroke();
+  fill(334, 20, 98);
+  circle(40, 100, 60);
+  circle(70, 70, 80);
+  circle(20, 60, 120);
+  circle(-40, 110, 60);
+  pop();
+  }
 }

@@ -11,23 +11,44 @@
 
  //
 
+const backgroundColor = {
+  hue: undefined,
+  saturation: 55,
+  brightness: 90
+}
+
+const penColor = {
+  hue: undefined,
+  saturation: 55,
+  brightness: 90
+}
  function setup() {
+   colorMode(HSB);
+
+   backgroundColor.hue = random(0, 360);
+   penColor.hue = random(0, 360);
+
    createCanvas(900, 900);
-   background("#9A031E"); // background is intentionally in setup to stop it from refreshing in draw(). as long as it isn't refreshing constantly my cursor shenanigans will persist on the canvas until i refresh
+   background(backgroundColor.hue, backgroundColor.saturation, backgroundColor.brightness); // background is intentionally in setup to stop it from refreshing in draw(). as long as it isn't refreshing constantly my cursor shenanigans will persist on the canvas until i refresh
  }
 
  function draw() {
 
    pen();
+   textSize(55);
+
+   if (keyIsPressed === true) {
+     setup();
+   }
  }
 
  function pen(){ // if this function detects that left click is being held down, it will fill the "pen" with a different color. otherwise, this color will be that of the background. then, if you move your cursor around the canvas, it will erase what you just drew
    push();
  if (mouseIsPressed) {
-   fill("#5F0F40");
+   fill(penColor.hue, penColor.saturation, penColor.brightness);
  }
    else {
-     fill("#9A031E")
+     fill(backgroundColor.hue, backgroundColor.saturation, backgroundColor.brightness);
    }
      noStroke(); //
      circle(mouseX, mouseY, 70); // the 'fills' above will modify that of this circle, which follows the cursor at all times, even as the background color

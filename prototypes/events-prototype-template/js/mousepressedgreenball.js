@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * "Mouse Pressed" Conscious Green Ball
+ * Joel P.
  *
  * The newer variation of the covid conscious green ball in which you harass the scared guy by clicking on him
  */

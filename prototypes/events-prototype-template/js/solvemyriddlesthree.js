@@ -14,7 +14,7 @@ shackles: {
  shackleClosed: HALF_PI,
  shackleClosed2: undefined // i'm not sure if including a second undefined "start" position for the second version of the shackle does anything and might be spaghetti code on my part but i'm doing it because i feel indebted
 },
-entryKey: 66 // was originally supposed to be key code 16, which i believe is shift, but i couldn't get it to work when testing for some reason. also used to be enter but i believe this one was causing conflicts when being used as an input
+entryKey: 8 // key code is for the backspace key. was originally supposed to be key code 16, which i believe is shift, but i couldn't get it to work when testing for some reason. also used to be enter but i believe this one was causing conflicts when being used as an input
 }
 
 const textElement = { // text element returns; 2 versions of text display with instructions
@@ -37,7 +37,7 @@ ellipseMode(CENTER);
 }
 
 function draw() { // draw places the lock's graphic elements as well as the text on the canvas. i wanted to make sure i wasn't running any keyIsPressed stuff here since i am well aware that draw updates once every frame or so, which i don't want to happen; i only want my lock to update once and then stop updating
-background(256);
+background('#8F3646');
 
 push();
 textSize(textElement.size);
@@ -64,6 +64,9 @@ fill('#171104');
 ellipse(width/2, height/2 + 20, 80);
 
 triangle(width/2, height/2 + 10, width/2 + 40, height/2 + 140, width/2 - 40, height/2 + 140);
+pop();
+pop();
+pop();
 }
 
 //function openLock() {

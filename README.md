@@ -93,3 +93,31 @@ it is cart253
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/scarycanvas.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/conditionals-prototype-template/js/scarycanvas.js">here</a>
+
+<h2>EVENTS PROTOS</h2>
+<hr>
+
+<h3>Prototype A: "'Mouse Pressed'-Conscious Green Ball"</h3>
+<p>Modified version of the <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/covidconsciousgreenball.html">Covid Conscious Green Ball project</a> from last time, which has it so that Green Ball does not enjoy being poked at by the cursor.</p>
+
+<img src="Images/i_mousepressedgreenball_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/events-prototype-template/index.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/events-prototype-template/js/mousepressedgreenball.js">here</a>
+
+<h3>Prototype B: "Key for the Lock"</h3>
+<p>Unlock my lock with my wicked key. But which "key?" Who knows. Go ham on your keyboard to guess which one works.</p>
+
+<img src="Images/i_keyforthelock_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/events-prototype-template/keyforthelock.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/events-prototype-template/js/keyforthelock.js">here</a>
+
+<h3>Prototype C: "Disappearing Ball"</h3>
+<p>Destroy this ball using the power of the keyboard's backspace key, to "backspace" it out of existing perhaps.</p>
+
+<img src="Images/i_disappearingball_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/events-prototype-template/disappearingball.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/events-prototype-template/js/disappearingball.js">here</a>
+

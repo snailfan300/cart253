@@ -1,3 +1,10 @@
+/**
+ * Key for the Lock
+ * Joel P.
+ *
+ * Find which "key" on the "key"board is the right "key" for this lock
+ */
+
 new p5();  // so basically i had this issue in which i was defining the parameters of a p5 arc as a global variable. notably if you try to define variables using stuff like random(), or in my case, radians, above setup, the program will keep rejecting it saying the variables haven't been defined in the current scope or something. however if i moved my global variable to setup, suddenly they wouldn't be global variables anymore and functions would keep rejecting them as well. i believe this is because the p5 library is only initialized at setup, but i genuinely NEEDED my radian parameters defined, so i found the only fix was to force p5 to initialize before setup, hence "new p5()." i'm so bummed...
 
 const lockShackle = { // global variable parameters for the arc portion of the graphic lock, so they can be modified using functions

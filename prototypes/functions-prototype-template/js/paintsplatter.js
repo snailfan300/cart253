@@ -32,14 +32,14 @@ function draw() {
 
 function keyPressed(event) { // If the spacebar is pressed it creates a random paint splatter somewhere on the canvas with a random size and color
   if (event.keyCode === keyDown.specificKey) {
-    paintSplatter(random(0, width), random(0, height), random(50, 400));
+    paintSplatter(random(0, width), random(0, height), random(50, 350));
   }
 }
 
 function paintSplatter(x, y, size) { // The parameters are intended to be replaced with random constraints in the keyPressed()
   push();
   noStroke();
-  fill(random(0, 360), 95, 95);
+  fill(random(0, 360), 95, 95, 0.85);
   ellipse(x, y, size);
   ellipse(random(0.5, 2) * x, random(0.5, 2) * y, random(0.5, 2) * size); // Bottom two ellipses should possibly create extra instances of ellipses, so the paint splatters look more "splatter-y" when appearing (and aren't just circles)
   ellipse(random(-1.5, -0.2) * x, random(-1.5, -0.2) * y, random(-1.5, -0.2) * size);

@@ -18,6 +18,7 @@ function setup() {
   createCanvas(900, 900);
   background(250, 255, 141); // Background called in setup so it doesn't erase all my other stuff (if it were to redraw itself in draw())
   ellipseMode(CENTER);
+  textAlign(CENTER);
   smileyGuy();
 
   push();

@@ -15,19 +15,19 @@ function setup() {
   // Create the canvas
   createCanvas(400, 400);
   // Create the ball
-  ball = createBall(200, 200, 20);
+  ball = createBall();
 }
 
 /**
  * Creates a random ball
  */
-function createBall(x, y, size) {
+function createBall() {
   // Create a ball object with appropriate properties
   const newBall = {
     // Position and dimensions
-    x: x,
-    y: y,
-    size: size,
+    x: random(0, width),
+    y: random(0, height),
+    size: random(2,200),
     // Colour
     fill: "#000000",
     // Movement
@@ -91,6 +91,6 @@ function drawBall(ball) {
 }
 
 function mousePressed() {
-  createBall();
+  ball = createBall();
   balls.push(ball);
 }

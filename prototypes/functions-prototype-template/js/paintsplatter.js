@@ -14,13 +14,14 @@ const keyDown = { // To be used with keyPressed's validation
 
 function setup() { // Specific functions normally placed in draw() are moved here so they don't get re-drawn every frame
   createCanvas(900, 900);
-  background(255);
+  background(0);
   ellipseMode(CENTER);
   textAlign(CENTER);
   colorMode(HSB);
 
   push();
   textSize(35);
+  fill(0, 0, 100);
   text('Press spacebar to cover the canvas in paint splatters', width/2, 60);
   pop();
 
@@ -40,5 +41,7 @@ function paintSplatter(x, y, size) { // The parameters are intended to be replac
   noStroke();
   fill(random(0, 360), 95, 95);
   ellipse(x, y, size);
+  ellipse(random(0.5, 2) * x, random(0.5, 2) * y, random(0.5, 2) * size); // Bottom two ellipses should possibly create extra instances of ellipses, so the paint splatters look more "splatter-y" when appearing (and aren't just circles)
+  ellipse(random(-1.5, -0.2) * x, random(-1.5, -0.2) * y, random(-1.5, -0.2) * size);
   pop();
 }

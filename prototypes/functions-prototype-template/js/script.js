@@ -7,6 +7,9 @@
 
 "use strict";
 
+const keyDown = { // The keycode for the spacebar; will be referred to later
+  specificKey: 32
+}
 /**
  * Setup contains the usual "center modes" for shapes/objects, also holds the Smiley Guy function so it doesn't repeatedly redraw over my onslaught of projectiles
 */
@@ -16,13 +19,20 @@ function setup() {
   background(250, 255, 141); // Background called in setup so it doesn't erase all my other stuff (if it were to redraw itself in draw())
   ellipseMode(CENTER);
   smileyGuy();
+
+  push();
+  textSize(48);
+  text('Press spacebar to throw tomatoes at him', width/2, 60); // Descriptive text with instructions
+  pop();
 }
 
 function draw() { // Draw holds nothing as I don't intend for my functions to update every frame, or to "clear" each other
 }
 
-function mousePressed() { // When the mouse is clicked it spawns a tomato at the cursor's position
+function keyPressed(event) { // When the spacebar is clicked it spawns a tomato at the cursor's position
+  if (event.keyCode === keyDown.specificKey) {
     throwTomato(mouseX, mouseY);
+  }
 }
 
 function throwTomato(x, y) { // Creates tomato objects, using parameters that are to be replaced with mouseX and mouseY later

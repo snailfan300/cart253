@@ -45,9 +45,11 @@ function createBall(x, y, size) {
 function draw() {
   background("#87ceeb");
 
+  for (let ball of balls) {
   moveBall(ball);
   bounceBall(ball);
   drawBall(ball);
+  }
 }
 
 /**
@@ -86,4 +88,9 @@ function drawBall(ball) {
   fill(ball.fill);
   ellipse(ball.x, ball.y, ball.size);
   pop();
+}
+
+function mousePressed() {
+  createBall();
+  balls.push(ball);
 }

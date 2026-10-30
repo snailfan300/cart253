@@ -2,10 +2,19 @@ function setup() {
   createCanvas(900, 900);
   ellipseMode(CENTER);
   colorMode(HSB);
+  textAlign(CENTER);
+
+
 }
 
 function draw() {
      background(0, 0, 0, 0.45);
+  push();
+  textSize(48);
+  fill(0, 0, 60);
+  text('Hold click to spawn circles', width/2, 60); // Descriptive text with instructions
+  text('(Slight flash warning)', width/2, 100);
+  pop();
 
   if (mouseIsPressed === true) {
     orbit(random(-300, 300), random(-300, 300), random(20, 300), random(0, 360));

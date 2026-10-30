@@ -1,12 +1,5 @@
 new p5();
 
-const randomVals = {
-    x: random(-100, 100),
-    y: random(-100, 100),
-    size: random(20, 300),
-    colour: random(0, 360)
-  }
-
 function setup() {
   createCanvas(900, 900);
   ellipseMode(CENTER);
@@ -16,6 +9,13 @@ function setup() {
 
 function draw() {
    background(220);
+
+  const randomVals = {
+    x: random(-100, 100),
+    y: random(-100, 100),
+    size: random(20, 300),
+    colour: random(0, 360)
+  }
    if (mouseIsPressed === true) {
      orbit(randomVals.x, randomVals.y, randomVals.size, randomVals.colour);
    }

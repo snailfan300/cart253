@@ -121,3 +121,30 @@ it is cart253
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/events-prototype-template/disappearingball.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/events-prototype-template/js/disappearingball.js">here</a>
 
+<h2>FUNCTIONS PROTOS</h2>
+<hr>
+
+<h3>Prototype A: "BOO!!!"</h3>
+<p>Modified version of the <a href="https://snailfan300.github.io/cart253/prototypes/conditionals-prototype-template/covidconsciousgreenball.html">Covid Conscious Green Ball project</a>, but only to re-use the green ball guy because it's a forced gag. You can throw tomatoes at Green Ball now.</p>
+
+<img src="Images/i_throwtomatoes_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/functions-prototype-template/index.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/functions-prototype-template/js/throwtomato.js">here</a>
+
+<h3>Prototype B: "Paint Splatter"</h3>
+<p>Press the spacebar to add more paint splatters to the empty canvas. Looks pretty.</p>
+
+<img src="Images/i_paintsplatter_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/functions-prototype-template/paintsplatter.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/functions-prototype-template/js/paintsplatter.js">here</a>
+
+<h3>Prototype A: "Weird Flicker"</h3>
+<p>Hold down left mouse click (or otherwise just click, like a lot?) to create a handful of weird circles that fade in after a brief moment, a bit like a weird haze.</p>
+<p>(***Might be irritating to photosensitive individuals***)</p>
+
+<img src="Images/i_weirdflicker_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/functions-prototype-template/weirdflicker.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/functions-prototype-template/js/weirdflicker.js">here</a>

@@ -140,7 +140,7 @@ it is cart253
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/functions-prototype-template/paintsplatter.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/functions-prototype-template/js/paintsplatter.js">here</a>
 
-<h3>Prototype A: "Weird Flicker"</h3>
+<h3>Prototype C: "Weird Flicker"</h3>
 <p>Hold down left mouse click (or otherwise just click, like a lot?) to create a handful of weird circles that fade in after a brief moment, a bit like a weird haze.</p>
 <p>(***Might be irritating to photosensitive individuals***)</p>
 

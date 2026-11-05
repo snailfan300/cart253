@@ -34,10 +34,11 @@ function setup() {
   createCanvas(900, 900);
   ellipseMode(CENTER);
   textAlign(CENTER);
+  colorMode(HSB);
 }
 
 function draw() {
-  background(0);
+  background(0, 0, 0, 0.45);
 
   let predictionText = predictions[index];
 
@@ -70,9 +71,29 @@ function draw() {
   // text display
   push();
   textSize(40);
-  stroke(255);
+  stroke('#FFFFFF');
+  fill(0);
   strokeWeight(3);
   text(predictionText, width/2, 60);
+  pop();
+
+  push();
+   if (mouseIsPressed === true) {
+    orbit(random(-300, 300), random(-300, 300), random(20, 300), random(0, 360));
+    orbit(random(-200, 200), random(-200, 200), random(20, 300), random(0, 360));
+    orbit(random(-200, 200), random(-200, 200), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+    orbit(random(-100, 100), random(-100, 100), random(20, 300), random(0, 360));
+
+    frameRate(8);
+   }
   pop();
 
 
@@ -87,4 +108,13 @@ if (collision && mouseIsPressed) {
 
 function mouseClicked() {
   index = (round(random(1, 19)));
+}
+
+function orbit(x, y, size, colour) {
+  push();
+  translate(width/2, height/2);
+  noStroke();
+  fill(colour, 95, 95, 0.15);
+  rotate(frameCount*0.1);
+  circle(x, y, size);
 }

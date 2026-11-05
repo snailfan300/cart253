@@ -7,9 +7,9 @@ let fuzzs = [];
 function setup() {
   createCanvas(900, 900);
   colorMode(HSB);
-  frameRate(9);
+  frameRate(7);
 
-  for (let f = 0; f < 200; f += 1) {
+  for (let f = 0; f < 250; f += 1) {
     let x = random(-70, width);
     let y = random(-70, height);
     let size = random(60, 120);

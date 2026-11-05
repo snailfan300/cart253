@@ -56,4 +56,14 @@ class bubbleClass {
     this.y += this.velocityY;
 }
 
+boundaries() {
+  if (this.x < 0 || this.x > width) {
+    this.velocityX = this.velocityX * -1;
+  }
+
+  if (this.y < 0 || this.y > width) {
+    this.velocityY = this.velocityY * -1;
+  }
+}
+
 }

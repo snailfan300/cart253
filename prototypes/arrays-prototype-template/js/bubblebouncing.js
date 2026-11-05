@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 0, 0, 0.2);
+  background(0, 0, 0, 0.4);
 
   for (let bubble of bubbles) {
 
@@ -50,7 +50,7 @@ class bubbleClass {
   create() {
     push();
     noStroke();
-    fill(this.hues, 95, 95, 0.7);
+    fill(this.hues, 67, 95, 0.2);
     ellipse(this.x, this.y, this.size);
   }
 

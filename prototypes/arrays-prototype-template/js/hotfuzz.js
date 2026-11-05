@@ -6,7 +6,6 @@ let fuzzs = [];
 
 function setup() {
   createCanvas(900, 900);
-  ellipseMode(CENTER);
   colorMode(HSB);
 
   for (let f = 0; f < 100; f += 1) {

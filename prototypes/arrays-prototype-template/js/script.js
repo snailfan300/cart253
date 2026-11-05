@@ -1,8 +1,8 @@
-let predictions = [
+const predictions = [
   'Nothing here yet.',
   'You will be deep-fried in beef tallow tomorrow',
   'One of your friends will get the flu next week',
-  'You will receive 550 lbs of herring',
+  'You will be emailed 550 lbs of herring',
   'Your favorite game will win Game of the Year',
   'You will have a very restful sleep',
   'You will be exempted from all of your exams',
@@ -11,16 +11,23 @@ let predictions = [
   'You will pull a random muscle in the next hour',
   'A random food item in your house is now moldy',
   'Something scary will happen soon. 👀',
-  'You will develop an allergy to lentils'
+  'You will develop an allergy to lentils',
+  'You have been invited to my potluck of peace',
+  'Thursday has been deleted from the work week',
+  'Silksong update tomorrow',
+  'The invasive ladybugs will leave your hometown',
+  'Moodle will stop signing you out for a week',
+  'You are the winner of this chicken dinner',
+  'You will stub your toe in thirty seconds'
 ]
 
 let index = 0;
 
-const button = {
+const crystalball = {
   x: 450,
   y: 450,
   size: 400,
-  fill: '#30D99B'
+  fill: '#A630A6'
 }
 
 function setup() {
@@ -30,27 +37,54 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
 
   let predictionText = predictions[index];
 
+  // crystal ball stand
   push();
   noStroke();
-  fill(button.fill);
-  ellipse(button.x, button.y, button.size);
+  fill('#C28F10');
+  triangle(width/2, height/2, 300, 700, 600, 700);
   pop();
 
   push();
-  textSize(35);
+  noStroke();
+  fill(crystalball.fill);
+  ellipse(crystalball.x, crystalball.y, crystalball.size);
+  pop();
+
+  // crystal ball details
+  push();
+  noStroke()
+
+  fill('#882B94');
+  ellipse(420, 580, 140, 80);
+  ellipse(360, 500, 70);
+
+  fill('#B53AA9');
+  ellipse(530, 350, 150, 110);
+
+  pop();
+
+  // text display
+  push();
+  textSize(40);
+  stroke(255);
+  strokeWeight(3);
   text(predictionText, width/2, 60);
   pop();
 
 
-  let cursorDist = dist(mouseX, mouseY, button.x, button.y);
+  let cursorDist = dist(mouseX, mouseY, crystalball.x, crystalball.y);
 
-let collision = (cursorDist < button.size/2);
+let collision = (cursorDist < crystalball.size/2);
 
 if (collision && mouseIsPressed) {
-  index = random(1, 12);
+
 }
+}
+
+function mouseClicked() {
+  index = (round(random(1, 19)));
 }

@@ -52,6 +52,7 @@ class bubbleClass { // class holding the information/variables for my bubble obj
     noStroke();
     fill(this.hues, 67, 95, 0.2);
     ellipse(this.x, this.y, this.size);
+    pop();
   }
 
   move() { // adds velocity to random positions so they start to move around, usually diagonally

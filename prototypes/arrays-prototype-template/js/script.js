@@ -1,4 +1,8 @@
-const predictions = [
+// Joel P.
+// "Ponder the Orb"
+// The gist of it is that you click the orb for a random assortment of weird fortunes. Features cool color gimmicks because they look pleasant and magical
+
+const predictions = [ // array holding numerous strings
   'Nothing here yet.',
   'You will be deep-fried in beef tallow tomorrow',
   'One of your friends will get the flu next week',
@@ -21,7 +25,7 @@ const predictions = [
   'You will stub your toe in thirty seconds'
 ]
 
-let index = 0;
+let index = 0; // set the array to a variable
 
 const crystalball = {
   x: 450,
@@ -38,9 +42,9 @@ function setup() {
 }
 
 function draw() {
-  background(0, 0, 0, 0.45);
+  background(0, 0, 0, 0.45); // alpha on background for slight color persistence
 
-  let predictionText = predictions[index];
+  let predictionText = predictions[index]; // will be used for the text element later, will set the text to whatever element is at the index in here
 
   // crystal ball stand
   push();
@@ -49,6 +53,7 @@ function draw() {
   triangle(width/2, height/2, 300, 700, 600, 700);
   pop();
 
+  // crystal ball object itself
   push();
   noStroke();
   fill(crystalball.fill);
@@ -77,6 +82,7 @@ function draw() {
   text(predictionText, width/2, 60);
   pop();
 
+  // flickering magic circles code
   push();
    if (mouseIsPressed === true) {
     orbit(random(-300, 300), random(-300, 300), random(20, 300), random(0, 360));
@@ -96,20 +102,18 @@ function draw() {
    }
   pop();
 
-
+// collision checker for the orb (orb will not do anything if not interacted with directly)
   let cursorDist = dist(mouseX, mouseY, crystalball.x, crystalball.y);
 
 let collision = (cursorDist < crystalball.size/2);
 
 if (collision && mouseIsPressed) {
-
+  index = (round(random(1, 19))); // will set the index to a random value between 1 and 19, excluding element 0. round ensures the program does not pull decimal values as this will break the program entirely
 }
 }
 
-function mouseClicked() {
-  index = (round(random(1, 19)));
-}
 
+// reused orbit code that makes random circles appear when the user clicks *anywhere* on the canvas
 function orbit(x, y, size, colour) {
   push();
   translate(width/2, height/2);

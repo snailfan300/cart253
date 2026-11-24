@@ -148,3 +148,30 @@ it is cart253
 
 > - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/functions-prototype-template/weirdflicker.html">here</a>
 > - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/functions-prototype-template/js/weirdflicker.js">here</a>
+
+<h2>ARRAYS PROTOS</h2>
+<hr>
+
+<h3>Prototype A: "Ponder the Orb"</h3>
+<p>A magic crystal ball with terrible predictions when you click on it.</p>
+
+<img src="Images/i_pondermyorb_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/arrays-prototype-template/index.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/arrays-prototype-template/js/pondertheorb.js">here</a>
+
+<h3>Prototype B: "Color Bubbles"</h3>
+<p>Bubbles with alpha transparency created using an array and a class that move around the canvas. No interaction.</p>
+
+<img src="Images/i_bubbles_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/arrays-prototype-template/bubblebouncing.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/arrays-prototype-template/js/bubblebouncing.js">here</a>
+
+<h3>Prototype C: "Hot Fuzz"</h3>
+<p>Squares with alpha transparency created using an array and a class that change positions at a low frame rate, cycling through the color spectrum. No interaction.</p>
+
+<img src="Images/i_hotfuzz_ss.png">
+
+> - Running project can be found <a href="https://snailfan300.github.io/cart253/prototypes/arrays-prototype-template/hotfuzz.html">here</a>
+> - Code can be found <a href="https://github.com/snailfan300/cart253/blob/main/prototypes/arrays-prototype-template/js/hotfuzz.js">here</a>

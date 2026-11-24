@@ -41,6 +41,12 @@ function draw() {
 
     bubble.decrease();
   }
+
+  for (let i = 0; i < bubbles.length; i++) {
+  if (bubbles[i].size <= 0) {
+    bubbles.splice(i, 1);
+  }
+}
 }
 
 

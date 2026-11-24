@@ -38,6 +38,8 @@ function draw() {
     bubble.move();
 
     bubble.boundaries();
+
+    bubble.decrease();
   }
 }
 
@@ -74,4 +76,8 @@ class bubbleClass {
       this.velocityY = this.velocityY * -1;
     }
   }
+
+  decrease() {
+  this.size = this.size - 0.5;
+}
 }

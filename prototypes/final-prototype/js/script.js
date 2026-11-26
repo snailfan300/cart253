@@ -15,7 +15,7 @@ const object = {
 let bubbles = [];
 
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(900, 600);
   ellipseMode(CENTER);
   colorMode(HSB);
 
@@ -51,8 +51,7 @@ function draw() {
 }
 
 function hueChange(hue) {
-  object.hues = map(bubbles.length, 0, 100, 0, 360) + random(-50, 10);
-
+  object.hues = map(bubbles.length, 0, 300, 0, 360) + random(-50, 10);
 
   for (let i = 0; i < bubbles.length; i++) {
     if (bubbles[i].hues >= 360) {
@@ -63,32 +62,36 @@ function hueChange(hue) {
 
 function keyPressed(event) {
   if (event.keyCode === object.keyNumber) {
-    let bubble = new bubbleClass(
-      random(0, width),
-      random(0, height),
-      random(60, 320),
-      random(-7, 7),
-      random(-7, 7),
-      object.hues
-    );
-    bubbles.push(bubble);
+    for (let i = 0; i < 3; i++) {
+      let bubble = new bubbleClass(
+        random(0, width),
+        random(0, height),
+        random(60, 320),
+        random(-7, 7),
+        random(-7, 7),
+        object.hues,
+        random(0.05, 0.4)
+      );
+      bubbles.push(bubble);
+    }
   }
 }
 
 class bubbleClass {
-  constructor(x, y, size, velocityX, velocityY, hues) {
+  constructor(x, y, size, velocityX, velocityY, hues, opac) {
     this.x = x;
     this.y = y;
     this.size = size;
     this.velocityX = velocityX;
     this.velocityY = velocityY;
     this.hues = object.hues;
+    this.opac = opac;
   }
 
   create() {
     push();
     noStroke();
-    fill(this.hues, 67, 95, 0.2);
+    fill(this.hues, 67, 95, this.opac);
     ellipse(this.x, this.y, this.size);
     pop();
   }

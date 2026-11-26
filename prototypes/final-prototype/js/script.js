@@ -62,13 +62,13 @@ function hueChange(hue) {
 
 function keyPressed(event) {
   if (event.keyCode === object.keyNumber) {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
       let bubble = new bubbleClass(
         random(0, width),
         random(0, height),
-        random(60, 320),
-        random(-7, 7),
-        random(-7, 7),
+        random(60, 280),
+        random(-6, 6),
+        random(-6, 6),
         object.hues,
         random(0.05, 0.4)
       );
@@ -112,8 +112,8 @@ class bubbleClass {
   }
 
   decrease() {
-    this.size = this.size - 0.5;
+    this.size = this.size - 0.3;
     this.hues = this.hues + 0.5;
-    this.opac -= 0.0005;
+    this.opac -= 0.00025;
   }
 }

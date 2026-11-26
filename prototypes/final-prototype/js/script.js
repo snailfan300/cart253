@@ -113,5 +113,7 @@ class bubbleClass {
 
   decrease() {
     this.size = this.size - 0.5;
+    this.hues = this.hues + 0.5;
+    this.opac -= 0.0005;
   }
 }

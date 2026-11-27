@@ -124,11 +124,11 @@ class bubbleClass {
     this.velocityY = this.velocityY * 0.996;
 
     if (abs(this.velocityX) < 0.01) {
-    this.velocityX = 0;
+      this.velocityX = 0;
     }
 
     if (abs(this.velocityY) < 0.01) {
-    this.velocityY = 0;
+      this.velocityY = 0;
     }
   }
 }

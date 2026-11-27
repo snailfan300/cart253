@@ -15,7 +15,7 @@ const object = {
 let bubbles = [];
 
 function setup() {
-  createCanvas(900, 600);
+  createCanvas(1200, 900);
   ellipseMode(CENTER);
   colorMode(HSB);
 
@@ -38,10 +38,12 @@ function draw() {
     bubble.boundaries();
 
     bubble.decrease();
+
+    bubble.lossVelocity();
   }
 
   for (let i = 0; i < bubbles.length; i++) {
-    if (bubbles[i].size <= 0) {
+    if (bubbles[i].size <= 0 || bubbles[i].opac <= 0) {
       bubbles.splice(i, 1);
     }
   }
@@ -66,9 +68,9 @@ function keyPressed(event) {
       let bubble = new bubbleClass(
         random(0, width),
         random(0, height),
-        random(60, 280),
-        random(-6, 6),
-        random(-6, 6),
+        random(120, 360),
+        random(-9, 9),
+        random(-9, 9),
         object.hues,
         random(0.05, 0.4)
       );
@@ -112,8 +114,21 @@ class bubbleClass {
   }
 
   decrease() {
-    this.size = this.size - 0.3;
+    this.size = this.size - 0.2;
     this.hues = this.hues + 0.5;
-    this.opac -= 0.00025;
+    this.opac -= 0.0003;
+  }
+
+  lossVelocity() {
+    this.velocityX = this.velocityX * 0.996;
+    this.velocityY = this.velocityY * 0.996;
+
+    if (abs(this.velocityX) < 0.01) {
+    this.velocityX = 0;
+    }
+
+    if (abs(this.velocityY) < 0.01) {
+    this.velocityY = 0;
+    }
   }
 }
